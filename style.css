@@ -6,7 +6,7 @@ body.main-page {
 /* Apply styles to the .upper-bar class */
 .upper-bar {
     background-color: black;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
 }
 
