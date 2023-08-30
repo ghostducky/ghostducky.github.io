@@ -1,12 +1,59 @@
-/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
-/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
- @import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
- @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
- @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
-/*--------------------------------------------------------------------- basic ---------------------------------------------------------------------*/
+html {
+    height: 100%;
+}
 
 body {
-    background-color: black;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, #1d191f, #8016b5);
+}
+
+.main-up{
+    position: absolute;
+    top: 20px; /* Adjust this value as needed */
+    left: 5%;
+    right: 5%;
+    background: #000000;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.namebox{
+    text-align: left;
+    color: rgb(161, 158, 158);
+    padding-left: 10px;
+}
+
+.main-blobs{
+    background: #000000;
+}
+
+/* Your existing CSS styles */
+
+/* Styling for sections */
+.section {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 40px;
+    /* Add other styles as needed */
+}
+
+.section-1 {
+    background: #f0f0f0; /* Different background color for section 1 */
+    top: calc(100% + 20px); /* Position section 1 right below main-up */
+    left: calc(100% + 20px);
+    position: absolute; /* Use absolute positioning for section 1 */
+    left: 5%;
+    right: 5%;
+}
+
+.section-2 {
+    background: #e0e0e0; /* Different background color for section 2 */
+    left: calc(100% + 40px + 40px); /* Position section 2 below section 1 */
+    top: calc(100% + 20);
+    position: absolute; /* Use absolute positioning for section 2 */
+    left: 5%;
+    right: 5%;
 }
