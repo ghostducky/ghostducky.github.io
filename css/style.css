@@ -26,34 +26,26 @@ body {
     padding-left: 10px;
 }
 
-.main-blobs{
-    background: #000000;
-}
-
-/* Your existing CSS styles */
-
-/* Styling for sections */
-.section {
-    background: #ffffff;
+.blob-1{
+    background: linear-gradient(to bottom right, #824a4a, #b51695);
+    position: absolute;
+    margin-top: 150px;
+    left: 5%;
+    height: 400px;
+    width: 300px;
     border-radius: 15px;
-    padding: 40px;
-    /* Add other styles as needed */
+    border-style: solid;
+    border-color: #000000;
+    border-width: 4px;
 }
 
-.section-1 {
-    background: #f0f0f0; /* Different background color for section 1 */
-    top: calc(100% + 20px); /* Position section 1 right below main-up */
-    left: calc(100% + 20px);
-    position: absolute; /* Use absolute positioning for section 1 */
-    left: 5%;
-    right: 5%;
+.blob-1:hover{
+    height: 420px;
+    width: 320px;
+    left: 4%;
+    margin-top: 140px;
 }
 
-.section-2 {
-    background: #e0e0e0; /* Different background color for section 2 */
-    left: calc(100% + 40px + 40px); /* Position section 2 below section 1 */
-    top: calc(100% + 20);
-    position: absolute; /* Use absolute positioning for section 2 */
-    left: 5%;
-    right: 5%;
-}
+
+
+
