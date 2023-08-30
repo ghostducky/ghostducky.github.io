@@ -7,11 +7,26 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom right, #1d191f, #8016b5);
+    background: #1b242b;
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between; /* Distribute items vertically with space-between */
+    align-items: center; /* Center items horizontally */
+}
+.up-placeholder{
+    width: 100%;
+    height: 12%;
 }
 
+.mid-info {
+    display: flex; /* Use flexbox for blobs */
+    justify-content: space-between; /* Distribute blobs equally */
+    margin-top: 20px;
+    height: 50%;
+}
+/*--------------------------------------- BLACK BAR START -----------------------------------------------------------*/
 .main-up{
-    position: absolute;
+    position: fixed;
     top: 20px; /* Adjust this value as needed */
     left: 5%;
     right: 5%;
@@ -26,30 +41,69 @@ body {
     padding-left: 10px;
 }
 
-.blob-1{
-    background: linear-gradient(to bottom right, #824a4a, #b51695);
-    position: absolute;
-    margin-top: 150px;
-    left: 5%;
-    height: 85px;
+.imgMail{
+    text-align: right;
+    right: 100  px;
+    bottom: 20px;
+}
+.mail-logo{
+    height: 20px;
+    width: auto;
+}
+/*--------------------------------------- BLACK BAR END -----------------------------------------------------------*/
+/*--------------------------------------- BLOB 1 START -----------------------------------------------------------*/
+.blob-1 {
+    height: 300px;
     width: 300px;
-    border-radius: 15px;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 4px;
-    transition: width 0.2s ease-in-out;
+    border-radius: 30px;
+    transition: border-color 0.3s ease-in-out, background 0.3s ease-in-out;
+    border: 2px solid transparent; /* Add a transparent border */
+    color: #ffffff;
 }
 
-.blob-1:hover{
-    width: 520px;
+.blob-1:hover {
+    border-color: #8ba3b5;
+    background: #374957;
+    color: #ffffff;
 }
+
 .blob-1-text{
-    top: auto;
-    left: auto;
+
 }
 
 .b1t{
-    font-size: 30px;
+    color: #ffffff;
     text-align: left;
     padding-left: 10px;
 }
+/*--------------------------------------- BLOB 1 END -----------------------------------------------------------*/
+/*--------------------------------------- BLOB 2 START -----------------------------------------------------------*/
+.blob-2 {
+    position: absolute;
+    margin-top: 150px;
+    left: 50%;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+    transition: border-color 0.3s ease-in-out, background 0.3s ease-in-out;
+    border: 2px solid transparent; /* Add a transparent border */
+    color: #ffffff;
+}
+
+.blob-2:hover {
+    border-color: #1e2641;
+    background: #11172e;
+    color: #ffffff;
+}
+
+.blob-2-text{
+
+}
+
+.b2t{
+    color: #ffffff;
+    text-align: left;
+    padding-left: 10px;
+}
+/*--------------------------------------- BLOB 2 END -----------------------------------------------------------*/
+/*--------------------------------------- BLOB 2 -----------------------------------------------------------*/
