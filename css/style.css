@@ -40,27 +40,19 @@ body {
     color: rgb(161, 158, 158);
     padding-left: 10px;
 }
-
-.imgMail{
-    text-align: right;
-    right: 100  px;
-    bottom: 20px;
-}
-.mail-logo{
-    height: 20px;
-    width: auto;
-}
 /*--------------------------------------- BLACK BAR END -----------------------------------------------------------*/
 /*--------------------------------------- BLOB 1 START -----------------------------------------------------------*/
 .blob-1 {
-    display: flex; /* Add this to create a flex container */
-    align-items: center; /* Vertically center content */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Add this to align content to the start (left) */
     height: 300px;
     width: 300px;
     border-radius: 30px;
     transition: border-color 0.3s ease-in-out, background 0.3s ease-in-out;
     border: 2px solid transparent;
     color: #ffffff;
+    position: relative; /* Add this to make the positioning of child elements relative to this container */
 }
 
 .blob-1:hover {
@@ -69,24 +61,34 @@ body {
     color: #ffffff;
 }
 
-.blob-1-text{
+.blob-1-text {
+    display: flex; /* Use flex to arrange text and button vertically */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Distribute space between elements */
     height: 100%;
     width: 100%;
     margin-left: 15px;
 }
 
-.b1t{
+.b1t {
     color: #ffffff;
     text-align: left;
 }
 
-.container {
+.b1info {
+    font-family: "Century Gothic";
+    height: fit-content;
 }
-
 
 .seeMorebtn {
-    margin-top: 10px; /* Adjust the top margin of the button */
+    margin-top: auto; /* Use auto margin to push the button to the bottom */
+    align-self: flex-start; /* Align the button to the left side */
+    margin-bottom: 15px;
+    background: transparent;
+    border: transparent;
+    color: rgb(132, 132, 255);
 }
+
 /*--------------------------------------- BLOB 1 END -----------------------------------------------------------*/
 /*--------------------------------------- BLOB 2 START -----------------------------------------------------------*/
 .blob-2 {
