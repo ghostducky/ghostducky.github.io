@@ -81,13 +81,21 @@ body {
 }
 
 .seeMorebtn {
-    margin-top: auto; /* Use auto margin to push the button to the bottom */
-    align-self: flex-start; /* Align the button to the left side */
+    margin-top: auto;
+    align-self: flex-start;
     margin-bottom: 15px;
     background: transparent;
     border: transparent;
     color: rgb(132, 132, 255);
+    cursor: pointer;
+    text-decoration-skip-ink: none; /* Prevent the underline from hugging the text */
+    padding-bottom: 5px; /* Adjust the spacing between text and underline */
 }
+
+.seeMorebtn:hover {
+    text-decoration: underline blue;
+}
+
 
 /*--------------------------------------- BLOB 1 END -----------------------------------------------------------*/
 /*--------------------------------------- BLOB 2 START -----------------------------------------------------------*/
