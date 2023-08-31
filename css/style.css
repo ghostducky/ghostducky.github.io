@@ -8,7 +8,7 @@ body {
     height: 100%;
     width: 100%;
     background: #1b242b;
-    display: flex; /* Use flexbox to align items */
+    display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
 }
@@ -18,7 +18,7 @@ body {
 }
 
 .mid-info {
-    display: flex; /* Use flexbox for blobs */
+    display: flex;
     justify-content: space-between;
     margin-top: 20px;
     height: 20%;
@@ -27,7 +27,7 @@ body {
 /*--------------------------------------- BLACK BAR START -----------------------------------------------------------*/
 .main-up{
     position: fixed;
-    top: 20px; /* Adjust this value as needed */
+    top: 20px;
     left: 5%;
     right: 5%;
     background: #000000;
@@ -45,14 +45,14 @@ body {
 .blob-1 {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Add this to align content to the start (left) */
+    justify-content: flex-start;
     height: 300px;
     width: 300px;
     border-radius: 30px;
     transition: border-color 0.3s ease-in-out, background 0.3s ease-in-out;
     border: 2px solid transparent;
     color: #ffffff;
-    position: relative; /* Add this to make the positioning of child elements relative to this container */
+    position: relative;
 }
 
 .blob-1:hover {
@@ -62,7 +62,7 @@ body {
 }
 
 .blob-1-text {
-    display: flex; /* Use flex to arrange text and button vertically */
+    display: flex;
     flex-direction: column; /* Stack elements vertically */
     justify-content: space-between; /* Distribute space between elements */
     height: 100%;
@@ -77,19 +77,20 @@ body {
 
 .b1info {
     font-family: "Century Gothic";
-    height: fit-content;
+    height: auto;
+    margin-top: 0px;
 }
 
 .seeMorebtn {
     margin-top: auto;
     align-self: flex-start;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     background: transparent;
     border: transparent;
     color: rgb(132, 132, 255);
     cursor: pointer;
     text-decoration-skip-ink: none; /* Prevent the underline from hugging the text */
-    padding-bottom: 5px; /* Adjust the spacing between text and underline */
+    
 }
 
 .seeMorebtn:hover {
