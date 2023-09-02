@@ -33,7 +33,7 @@ body {
     text-align: left;
     color: #a19e9e;
     padding-left: 10px;
-    border-bottom: 2px dashed #303f4e;
+    border-bottom: 2px dashed #1e2935;
 }
 
 .dropdown{
@@ -42,5 +42,26 @@ body {
     width: 100%;
     margin-top: 10px;
     justify-content: space-around;
+    color: white;
 }
 /*--------------------------------------- BLACK BAR END -----------------------------------------------------------*/
+/*--------------------------------------- DROPDOWN START -----------------------------------------------------------*/
+
+.contact:hover{
+    
+}
+
+.futureUpdates{
+
+}
+
+.futureUpdates:hover{
+}
+
+.help{
+
+}
+
+.help:hover{
+}
+/*--------------------------------------- DROPDOWN END -----------------------------------------------------------*/
