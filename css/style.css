@@ -7,7 +7,7 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
-    background: #1D2A35;
+    background: #dddddd;
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
@@ -22,7 +22,7 @@ body {
     top: 20px;
     left: 5%;
     right: 5%;
-    background: #15202B;
+    background: #738ba2;
     border-radius: 15px;
     margin-bottom: 20px;
     border: 1px solid;
@@ -48,6 +48,14 @@ body {
     cursor: pointer;
     color: yellow;
     text-decoration: underline yellow;
+}
+/*------- THEME -------*/
+#theme-toggle{
+    cursor: pointer;
+}
+
+.theme-icon:hover{
+    cursor: pointer;
 }
 
 .dropdown{
