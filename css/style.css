@@ -36,6 +36,20 @@ body {
     border-bottom: 2px dashed #1e2935;
 }
 
+.forEbi{
+    color: white;
+    text-align: right;
+    font-size: 10px;
+    text-decoration: underline white;
+    padding-right: 20px;
+}
+
+.forEbi:hover{
+    cursor: pointer;
+    color: yellow;
+    text-decoration: underline yellow;
+}
+
 .dropdown{
     justify-content: space-between;
     display: flex;
@@ -62,3 +76,9 @@ body {
 
 
 /*--------------------------------------- DROPDOWN END -----------------------------------------------------------*/
+
+.mainPageContent{
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+}
