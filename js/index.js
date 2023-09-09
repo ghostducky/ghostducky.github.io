@@ -41,3 +41,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // Call the function initially to set the button styles based on the current theme
     updateButtonStyles();
 });
+
+
+// JavaScript for toggling the dropdown details
+const dropdownItems = document.querySelectorAll('.dropdown p');
+
+dropdownItems.forEach(item => {
+    item.addEventListener('click', () => {
+        const detail = item.nextElementSibling;
+        if (detail.style.display === 'block') {
+            detail.style.display = 'none';
+        } else {
+            detail.style.display = 'block';
+        }
+    });
+});

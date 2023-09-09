@@ -86,10 +86,9 @@ body {
 .helpDetail {
     display: none;
     position: absolute;
-    top: 100%; /* Position below the parent element */
+    top: 100%;
     left: 0;
     background-color: white;
-    z-index: 1; /* Ensure dropdowns appear above other content */
 }
 
 
