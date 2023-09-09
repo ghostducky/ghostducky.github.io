@@ -69,24 +69,6 @@ body {
     cursor: pointer;
 }
 
-.theme-toggle img {
-    /* Your existing styles for the theme-toggle icon */
-    width: 30px;
-    height: 30px;
-}
-
-.theme-toggle img.glow {
-    /* Add a subtle glow effect */
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* White glow for dark theme */
-    /* You can adjust the color, size, and opacity as needed */
-}
-
-.theme-toggle.light img.glow {
-    /* Add a subtle glow effect for light theme */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7); /* Black glow for light theme */
-}
-
-
 .dropdown{
     justify-content: space-between;
     display: flex;
