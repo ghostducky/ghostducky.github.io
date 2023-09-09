@@ -34,29 +34,12 @@ body {
     color: #a19e9e;
     padding-left: 10px;
     border-bottom: 2px dashed #1e2935;
+    align-items: center; /* Center items horizontally */
+    flex-direction: column; /* Stack items vertically */
+    height: 50px;
 }
 
-.forEbi{
-    color: white;
-    text-align: right;
-    font-size: 10px;
-    text-decoration: underline white;
-    padding-right: 20px;
-}
 
-.forEbi:hover{
-    cursor: pointer;
-    color: yellow;
-    text-decoration: underline yellow;
-}
-/*------- THEME -------*/
-#theme-toggle{
-    cursor: pointer;
-}
-
-.theme-icon:hover{
-    cursor: pointer;
-}
 
 .dropdown{
     justify-content: space-between;
