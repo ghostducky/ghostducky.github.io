@@ -30,16 +30,21 @@ body {
 }
 
 .namebox{
+    display: flex;
+    justify-content: space-between; /* To push the .theme-toggle to the right */
+    align-items: center;
     text-align: left;
     color: #a19e9e;
     padding-left: 10px;
     border-bottom: 2px dashed #1e2935;
-    align-items: center; /* Center items horizontally */
     flex-direction: column; /* Stack items vertically */
     height: 50px;
 }
 
-
+.namePlaceholder{
+    width: 70px;
+    color: #1e2935;
+}
 
 .dropdown{
     justify-content: space-between;
