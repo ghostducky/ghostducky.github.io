@@ -2,7 +2,7 @@
 :root {
     --bg-color: #dddddd;
     --text-color: #000000;
-    --main-border-color: #303f4e;
+    --main-border-color: #677d92;
     --main-color: #738ba2;
     --button-bg-color: transparent;
 }
@@ -11,8 +11,7 @@
 .dark-theme {
     --bg-color: #1e2935;
     --text-color: #ffffff;
-    --main-color: #ffffff;
-    --main-border-color: #42566b;
+    --main-border-color: #414e5a;
     --main-color: #37424d;
     --button-bg-color: transparent;
 }
@@ -74,13 +73,13 @@ body {
     justify-content: space-between;
     display: flex;
     width: 100%;
-    margin-top: 10px;
+    padding-top: 10px;
     justify-content: space-around;
 }
 /*--------------------------------------- BLACK BAR END -----------------------------------------------------------*/
 /*--------------------------------------- DROPDOWN START -----------------------------------------------------------*/
 
-
+.infobtn
 
 .contactDetail,
 .futureDetail,
