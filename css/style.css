@@ -4,6 +4,7 @@
     --text-color: #000000;
     --main-border-color: #303f4e;
     --main-color: #738ba2;
+    --button-bg-color: transparent;
 }
 
 /* Dark Theme */
@@ -13,6 +14,7 @@
     --main-color: #ffffff;
     --main-border-color: #42566b;
     --main-color: #37424d;
+    --button-bg-color: transparent;
 }
 
 html {
@@ -53,21 +55,21 @@ body {
     align-items: center;
     text-align: left;
     padding-left: 10px;
-    border-bottom: 2px dashed #1e2935;
+    border-bottom: 2px dashed var(--main-border-color);
     height: 50px;
 }
 
 .namePlaceholder{
     width: 70px;
 }
-
+/*------- THEMES -------*/
 .theme-toggle{
     margin-right: 10px;
 }
 .theme-toggle:hover{
-    cursor: pointer;
-}
-
+    cursor: pointer;    /*when hovering, cursor changes to pointer,*/
+}                       /* when clicked page switches themes*/
+/*------- THEMES -------*/
 .dropdown{
     justify-content: space-between;
     display: flex;
@@ -97,4 +99,17 @@ body {
 .mainPageContent{
     text-align: center;
     margin-top: 60px;
+}
+
+.ebi{
+    text-align: left;
+}
+
+button#navigateButton {
+    background-color: var(--button-bg-light);
+    color: var(--button-text-light);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: underline var(--main-border-color);
 }

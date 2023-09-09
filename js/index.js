@@ -15,3 +15,29 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+//to ebi's page
+document.addEventListener("DOMContentLoaded", function() {
+    const navigateButton = document.getElementById("navigateButton");
+    const body = document.body;
+
+    navigateButton.addEventListener("click", function() {
+        // Navigate to ebi.html
+        window.location.href = "./ebi.html";
+    });
+
+    // Update button styles based on the theme
+    function updateButtonStyles() {
+        const isDarkTheme = body.classList.contains("dark-theme");
+
+        if (isDarkTheme) {
+            navigateButton.style.backgroundColor = "var(--button-bg-dark)";
+            navigateButton.style.color = "var(--button-text-dark)";
+        } else {
+            navigateButton.style.backgroundColor = "var(--button-bg-light)";
+            navigateButton.style.color = "var(--button-text-light)";
+        }
+    }
+
+    // Call the function initially to set the button styles based on the current theme
+    updateButtonStyles();
+});
