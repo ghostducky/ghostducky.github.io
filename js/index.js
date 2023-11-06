@@ -56,3 +56,8 @@ dropdownItems.forEach(item => {
         }
     });
 });
+
+document.getElementById("codeSpace").addEventListener("click", function() {
+    // Use JavaScript to navigate to another page
+    window.location.href = "codeSpace.html";
+});
