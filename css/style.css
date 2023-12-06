@@ -1,4 +1,5 @@
 body {
+    background-color: #000000;
     color: #cfcfcf;
     margin: 0;
     padding: 0;
@@ -10,11 +11,8 @@ body {
 }
 /* ----------------- a -----------------*/
 .upBar {
-    z-index: 5;
     width: 100%;
-    background-color: #161616;
-    border-bottom: 30px solid;
-    border-image: linear-gradient(to top, #333333, #161616) 1;
+    border-bottom: 2px dotted #242424;
 }
 .name{
     padding-left: 30px;
@@ -29,49 +27,27 @@ body {
 }
 /* ----------------- a -----------------*/
 /* ----------------- b -----------------*/
-
-
 .main {
     padding-top: 50px;
     height: 500px;
     width: 100%;
-    background: #333333;
 }
 /* ----------------- b -----------------*/
 /* ----------------- c -----------------*/
-.mainSplit {
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-}
 
-.mainLeft {
-    width: 60%;
-    height: 80px;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: 1px solid #000000;
-    background: rgb(138, 138, 138);
+.mainTop {
+    border: 2px solid #cfcfcf;
+    border-radius: 10px;
+    margin: 20px;
+    height: auto;
 }
+.select1
 /* ----------------- c -----------------*/
 /* ----------------- d -----------------*/
-.mainRight {
-    width: 35%;
-    height: 80px;
-    margin-top: 20px;
+.mainBottom {
+
 }
 .codeEditor {
-    height: px;
-    border-radius: 5px;
-    border: 1px solid #000000;
-    background: rgb(32, 32, 32);
+
 }
 /* ----------------- d -----------------*/
-
-/*------- THEMES -------*/
-/*.theme-toggle{
-    margin-right: 10px;
-}
-.theme-toggle:hover{
-    cursor: pointer;    /*when hovering, cursor changes to pointer
-}                       /* when clicked page switches themes*/
