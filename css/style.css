@@ -1,23 +1,5 @@
-/* Light Theme */
-:root {
-    --bg-color: #161616;
-    --text-color: #ffffff;
-    --main-border-color: #677d92;
-    --main-color: #738ba2;
-    --button-bg-color: transparent;
-}
-
-/* Dark Theme */
-.white-theme {
-    --bg-color: #d7d7d7;
-    --text-color: #000000;
-    --main-color: #37424d;
-    --button-bg-color: transparent;
-}
-
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    color: #cfcfcf;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -30,7 +12,9 @@ body {
 .upBar {
     z-index: 5;
     width: 100%;
-    background: linear-gradient(to bottom, rgb(17, 17, 17), transparent 95%);
+    background-color: #161616;
+    border-bottom: 30px solid;
+    border-image: linear-gradient(to top, #333333, #161616) 1;
 }
 .name{
     padding-left: 30px;
@@ -44,8 +28,45 @@ body {
     border-image-slice: 5;
 }
 /* ----------------- a -----------------*/
+/* ----------------- b -----------------*/
 
 
+.main {
+    padding-top: 50px;
+    height: 500px;
+    width: 100%;
+    background: #333333;
+}
+/* ----------------- b -----------------*/
+/* ----------------- c -----------------*/
+.mainSplit {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.mainLeft {
+    width: 60%;
+    height: 80px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background: rgb(138, 138, 138);
+}
+/* ----------------- c -----------------*/
+/* ----------------- d -----------------*/
+.mainRight {
+    width: 35%;
+    height: 80px;
+    margin-top: 20px;
+}
+.codeEditor {
+    height: px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    background: rgb(32, 32, 32);
+}
+/* ----------------- d -----------------*/
 
 /*------- THEMES -------*/
 /*.theme-toggle{
