@@ -30,7 +30,7 @@ body {
 .upBar {
     z-index: 5;
     width: 100%;
-    background: linear-gradient(to bottom, rgb(30, 30, 30), transparent 95%);
+    background: linear-gradient(to bottom, rgb(17, 17, 17), transparent 95%);
 }
 .name{
     padding-left: 30px;
