@@ -1,23 +1,18 @@
 /* Light Theme */
 :root {
-    --bg-color: #dddddd;
-    --text-color: #000000;
+    --bg-color: #161616;
+    --text-color: #ffffff;
     --main-border-color: #677d92;
     --main-color: #738ba2;
     --button-bg-color: transparent;
 }
 
 /* Dark Theme */
-.dark-theme {
-    --bg-color: #1e2935;
-    --text-color: #ffffff;
-    --main-border-color: #414e5a;
+.white-theme {
+    --bg-color: #d7d7d7;
+    --text-color: #000000;
     --main-color: #37424d;
     --button-bg-color: transparent;
-}
-
-html {
-    height: 100%;
 }
 
 body {
@@ -31,36 +26,6 @@ body {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
 }
-.up-placeholder{
-    width: 100%;
-    height: 12%;
-}
-/*--------------------------------------- BLACK BAR START -----------------------------------------------------------*/
-.main-up{
-    position: fixed;
-    top: 20px;
-    left: 5%;
-    right: 5%;
-    border-radius: 15px;
-    margin-bottom: 20px;
-    border: 1px solid;
-    background-color: var(--main-color);
-    border-color: var(--main-border-color);
-}
-
-.namebox{
-    display: flex;
-    justify-content: space-between; /* To push the .theme-toggle to the right */
-    align-items: center;
-    text-align: left;
-    padding-left: 10px;
-    border-bottom: 2px dashed var(--main-border-color);
-    height: 50px;
-}
-
-.namePlaceholder{
-    width: 70px;
-}
 /*------- THEMES -------*/
 .theme-toggle{
     margin-right: 10px;
@@ -69,45 +34,19 @@ body {
     cursor: pointer;    /*when hovering, cursor changes to pointer,*/
 }                       /* when clicked page switches themes*/
 /*------- THEMES -------*/
-.dropdown{
-    justify-content: space-between;
-    display: flex;
+.upBar {
+    margin-top: 20px;
     width: 100%;
-    padding-top: 10px;
-    justify-content: space-around;
+    z-index: 1;
 }
-/*--------------------------------------- BLACK BAR END -----------------------------------------------------------*/
-/*--------------------------------------- DROPDOWN START -----------------------------------------------------------*/
-
-.infobtn
-
-.contactDetail,
-.futureDetail,
-.helpDetail {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
+.name{
+    padding-left: 30px;
+    width: 5%;
+    display: flex;
+    align-items: center;
 }
-
-
-/*--------------------------------------- DROPDOWN END -----------------------------------------------------------*/
-
-.mainPageContent{
-    text-align: center;
-    margin-top: 60px;
-}
-
-.ebi{
-    text-align: left;
-}
-
-button#navigateButton {
-    background-color: var(--button-bg-light);
-    color: var(--button-text-light);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-decoration: underline var(--main-border-color);
+.name h4 {
+    border-bottom: 2px solid; /* Set the border thickness */
+    border-image: linear-gradient(to right, transparent, #660066, transparent); /* Linear gradient for fading effect */
+    border-image-slice: 5;
 }
