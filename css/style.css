@@ -33,7 +33,6 @@ body {
 .theme-toggle:hover{
     cursor: pointer;    /*when hovering, cursor changes to pointer,*/
 }                       /* when clicked page switches themes*/
-/*------- THEMES -------*/
 .upBar {
     margin-top: 20px;
     width: 100%;
