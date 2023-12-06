@@ -26,17 +26,11 @@ body {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
 }
-/*------- THEMES -------*/
-.theme-toggle{
-    margin-right: 10px;
-}
-.theme-toggle:hover{
-    cursor: pointer;    /*when hovering, cursor changes to pointer,*/
-}                       /* when clicked page switches themes*/
+/* ----------------- a -----------------*/
 .upBar {
-    margin-top: 20px;
+    z-index: 5;
     width: 100%;
-    z-index: 1;
+    background: linear-gradient(to bottom, rgb(30, 30, 30), transparent 95%);
 }
 .name{
     padding-left: 30px;
@@ -45,7 +39,18 @@ body {
     align-items: center;
 }
 .name h4 {
-    border-bottom: 2px solid; /* Set the border thickness */
-    border-image: linear-gradient(to right, transparent, #660066, transparent); /* Linear gradient for fading effect */
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent, #660066, transparent);
     border-image-slice: 5;
 }
+/* ----------------- a -----------------*/
+
+
+
+/*------- THEMES -------*/
+/*.theme-toggle{
+    margin-right: 10px;
+}
+.theme-toggle:hover{
+    cursor: pointer;    /*when hovering, cursor changes to pointer
+}                       /* when clicked page switches themes*/
