@@ -51,7 +51,12 @@ body {
     padding: 5px;
 }
 .codingLang{
+    position: relative;
     width: 100px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid purple;
+    border-radius: 12px;
 }
 .select1 h3 {
     font-family: 'Palatino', serif;
