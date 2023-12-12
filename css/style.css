@@ -61,9 +61,11 @@ body {
     border-image: linear-gradient(150deg, #000000 75%, #40074a) 1;
     border-radius: 10px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 .style1:hover{
     cursor: pointer;
+    background: #151515;
 }
 .select1 h3 {
     font-family: 'Palatino', serif;
