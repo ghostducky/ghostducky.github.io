@@ -57,15 +57,14 @@ body {
     padding: 20px 60px;
     position: relative;
     background: transparent;
-    border: 2px solid;
-    border-image: linear-gradient(150deg, #000000 75%, #40074a) 1;
+    border: 3px solid;
+    border-image: linear-gradient(150deg, #000000 60%, #40074a) 1;
     border-radius: 10px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-image 0.3s ease-in;
 }
 .style1:hover{
-    cursor: pointer;
-    background: #151515;
+    background-image: linear-gradient(150deg, #000000 60%, #40074a);
 }
 .select1 h3 {
     font-family: 'Palatino', serif;
