@@ -58,7 +58,7 @@ body {
     position: relative;
     background: transparent;
     border: 2px solid;
-    border-image: linear-gradient(150deg, #000000 90%, #40074a) 1;
+    border-image: linear-gradient(150deg, #000000 75%, #40074a) 1;
     border-radius: 10px;
     cursor: pointer;
 }
