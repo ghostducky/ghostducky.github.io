@@ -1,0 +1,149 @@
+body {
+    background-color: #000000;
+    color: #cfcfcf;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+/* ----------------- a -----------------*/
+.upBar {
+    width: 100%;
+    display: inline-block;
+}
+.name{
+    padding-left: 30px;
+    padding-top: 5px;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+.name h4 {
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, transparent, #660066, transparent);
+    border-image-slice: 15;
+}
+.lng {
+    display: flex;
+    align-items: center;
+}
+
+.lang {
+    cursor: pointer;
+    margin: 0 5px;
+    background: transparent;
+    border: transparent;
+    color:white;
+}
+
+.eng, .fin {
+    text-decoration: underline;
+}
+
+/* ----------------- a -----------------*/
+.fade{
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(#000000, #151515);
+}
+/* ----------------- b -----------------*/
+.main {
+    padding-top: 50px;
+    height: 500px;
+    width: 100%;
+    background: #151515;
+}
+/* ----------------- b -----------------*/
+.myStuff {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btnMS1, .btnMS2, .btnMS3{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid #313131;
+    border-radius: 2px;
+    color: white;
+}
+.btnMS1, .btnMS2, .btnMS3:hover{
+    background: #242424;
+}
+/* ----------------- c -----------------*/
+
+.mainTop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid #cfcfcf;
+    border-radius: 10px;
+    margin: 20px;
+    height: auto;
+}
+.select1, .select2,
+.select3, .select4 {
+    padding: 5px;
+    width: 40%;
+    display: inline-block;
+}
+
+.black, .barbie,
+.dark, .superSecret{
+    position: relative;
+    color: white;
+    width: 100%;
+    padding: 20px 60px;
+    background: transparent;
+    border: 3px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-image 0.3s ease;
+}
+.mainTop h3 {
+    font-family: 'Palatino', serif;
+}
+
+.black {
+    border-image: linear-gradient(150deg, #000000 60%, #40074a) 1;
+    background-image: linear-gradient(150deg, #000000 60%, #40074a);
+}
+.black:hover{
+
+}
+.barbie{
+    border-image: linear-gradient(210deg, #ffff 60%, #9c148c) 1;
+    background-image: linear-gradient(210deg, #ffff 60%, #9c148c);
+    color: black;
+}
+.barbie:hover{
+
+}
+
+/* ----------------- c -----------------*/
+
+.resultBottom{
+    margin: 20px;
+    width: 90%;
+    height: auto;
+}
+.sampleText{
+    position: relative;
+    text-align: center;
+}
+.sampleWindow{
+    position: relative;
+    border: 3px solid #cfcfcf;
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+.sampleTop{
+
+}
+/* ----------------- d -----------------*/
+/* ----------------- d -----------------*/
