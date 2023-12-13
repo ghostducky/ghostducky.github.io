@@ -39,8 +39,12 @@ body {
     color:white;
 }
 
-.eng, .fin {
+.eng {
     text-decoration: underline;
+}
+
+.lng span {
+    user-select: none;
 }
 
 /* ----------------- a -----------------*/
