@@ -10,7 +10,7 @@
 
     <title>Home</title>
 
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <!-- START OF WEBSITE -->
@@ -20,10 +20,10 @@
         <div class="name">
             <h4>Onni Raappana</h4>
         </div>
-        <div class="lng" onclick="switchLanguage(event)">
-            <span class="lang eng">en</span>
+        <div class="lng">
+            <button class="lang eng" onclick="navToEn()">en</button>
             <span>/</span>
-            <span class="lang fin">fi</span>
+            <button class="lang fin" onclick="navToFi()">fi</button>
         </div>
 
     </div>
@@ -33,7 +33,7 @@
         <div class="myStuff">
             <button class="btnMS1"><h3>Muut työt</h3></button>
             <button class="btnMS2"><h3>...</h3></button>
-            <button class="btnMS3" href="/contact.html"><h3>Yhteystiedot</h3></button>
+            <button class="btnMS3" onclick="navToCon()"><h3>Yhteystiedot</h3></button>
         </div>
 
         <div class="mainTop">
