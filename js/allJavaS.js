@@ -2,8 +2,11 @@ function navToFi() {
     window.location.href ='/fi/home.html';
 }
 function navToEn() {
-    windows.location.href = '/home.html';
+    window.location.href = '/home.html';
 }
 function navToCon() {
-    windows.location.href = '/en/contact.html';
+    window.location.href = '/en/contact.html';
+}
+function navToOthr() {
+    window.location.href = '/en/other-work.html';
 }
