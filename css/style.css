@@ -67,16 +67,25 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
-.btnMS1, .btnMS2, .btnMS3{
+
+.btnMS1,
+.btnMS2,
+.btnMS3 {
     display: inline-block;
     background: transparent;
     border: 2px solid #313131;
     border-radius: 2px;
     color: white;
+    user-select: none;
 }
-.btnMS1, .btnMS2, .btnMS3:hover{
+
+.btnMS1:hover,
+.btnMS2:hover,
+.btnMS3:hover {
     background: #242424;
+    cursor: pointer;
 }
+
 /* ----------------- c -----------------*/
 
 .mainTop {
