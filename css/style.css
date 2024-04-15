@@ -73,7 +73,7 @@ body {
     margin-bottom: 20px;
 }
 
-.detailPlaceholder p {
+.detailPlaceholder img {
     margin: 0 10px;
 }
 
@@ -90,4 +90,19 @@ body {
 }
 
 /* ----------------- c -----------------*/
-
+.mainTop{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 20px;
+}
+.mainTop h4 {
+    margin: 0 10px;
+    font-weight: 100;
+}
+.mainTop button{
+    background: transparent;
+    border: none;
+    color: var(--white-main-theme);
+    cursor: pointer;
+}
