@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #171717;
     color: #cfcfcf;
@@ -25,23 +29,32 @@ body {
 .upBar {
     width: 100%;
     background: #242424;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
-.name {
+.upBar .name {
     padding-left: 30px;
     display: flex;
     align-items: center;
 }
 
-.name h4 {
+.upBar .name h4 {
     font-size: 15px;
     font-weight: 500;
 }
 
-.toggleBtn {
+.upBar .toggleBtn {
     cursor: pointer;
     background: transparent;
 }
+
+
+
+
+
 
 /* ----------------- fade -----------------*/
 .fadeTop {
