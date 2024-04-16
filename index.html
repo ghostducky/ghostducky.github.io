@@ -1,67 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        
+        <title>Home</title>
+        <link rel="stylesheet" href="css/style.css"> <!-- all css -->
+        <link rel="stylesheet" href="font/stylesheet.css"> <!-- font -->
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-
-    <title>Home</title>
-
-    <link rel="stylesheet" href="css/style.css">
-    <!-- font -->
-    <link rel="stylesheet" href="font/stylesheet.css">
-
-</head>
-    <div class="upBar">
-        <div class="name">
-            <h4>ONNI RAAPPANA</h4>
-        </div>
-    </div>
-    <div class="fadeTop"></div>
-    <div class="main">
-        <div class="mainTop">
-            <div class="pro">
-                <button id="project">PROJECTS</button>
-            </div>
-            <div class="ab">
-                <button id="about">ABOUT</button>
-            </div>
-            <div class="con">
-                <button id="contact">CONTACT</button>
+    </head>
+    <body>
+        <div class="upBar">
+            <div class="name">
+                <h4>ONNI RAAPPANA</h4>
             </div>
         </div>
+        <!--<div class="fadeTop"></div>-->
+        <div class="main">
+            <div class="mainTop">
+                <div class="pro">
+                    <button id="project">PROJECTS</button>
+                </div>
+                <div class="ab">
+                    <button id="about">ABOUT</button>
+                </div>
+                <div class="con">
+                    <button id="contact">CONTACT</button>
+                </div>
+            </div>
 
-        <div class="project">
-            <div class="proTitle">
-                <h2>PROJECTS</h2>
+            <div class="project">
+                <div class="proTitle">
+                    <h2>PROJECTS</h2>
+                </div>
+            </div>
+
+            <div class="about">
+                <div class="abTitle">
+                    <h2>ABOUT</h2>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="conTitle">
+                    <h2>CONTACT</h2>
+                </div>
+                <div class="">
+                    <p>You can contact me from the following</p>
+                    <div class="form">
+                        <div class="form-title"></div>
+                        <form>
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email" autocomplete="email" placeholder="example@gmail.com">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" autocapitalize="on" autocomplete="name" placeholder="Jack Meoff">
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="about">
-            <div class="abTitle">
-                <h2>ABOUT</h2>
+
+        <div class="fadeBottom"></div> <!-- solely to get a fade going -->
+        <div class="info">
+            <div class="detailPlaceholder">
+                <img id="mail" src="./images/whitegmail.png" width="20" height="15">
+                <img id="linkedin" src="./images/linkedin-white.png" height="20">
+                <img id="github" src="./images/github-mark-white.png" height="20">
             </div>
         </div>
-
-        <div class="contact">
-            <div class="conTitle">
-                <h2>CONTACT</h2>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="fadeBottom"></div> <!-- solely to get a fade going -->
-    <div class="info">
-        <div class="detailPlaceholder">
-            <img id="mail" src="./images/whitegmail.png" width="20" height="15">
-            <img id="linkedin" src="./images/linkedin-white.png" height="20">
-            <img id="github" src="./images/github-mark-white.png" height="20">
-        </div>
-    </div>
 
 <!-- SCRIPTS -->
 <script src="/js/allJavaS.js"></script>
