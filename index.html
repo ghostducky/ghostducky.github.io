@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-        
         <title>Home</title>
         <link rel="stylesheet" href="css/style.css"> <!-- all css -->
         <link rel="stylesheet" href="font/stylesheet.css"> <!-- font -->
@@ -18,49 +17,48 @@
         <!--<div class="fadeTop"></div>-->
         <div class="main">
             <div class="mainTop">
-                <div class="pro">
-                    <button id="project">PROJECTS</button>
+                <div class="main-view">
+                    <div class="pro">
+                        <button id="project">PROJECTS</button>
+                    </div>
+                    <div class="ab">
+                        <button id="about">ABOUT</button>
+                    </div>
+                    <div class="con">
+                        <button id="contact">CONTACT</button>
+                    </div>
                 </div>
-                <div class="ab">
-                    <button id="about">ABOUT</button>
-                </div>
-                <div class="con">
-                    <button id="contact">CONTACT</button>
-                </div>
+                <img id="arrow-down" class="arrow-down" src="./images/arrow-down.png" width="25" height="25">
             </div>
-
             <div class="project">
                 <div class="proTitle">
                     <h2>PROJECTS</h2>
                 </div>
             </div>
-
             <div class="about">
                 <div class="abTitle">
                     <h2>ABOUT</h2>
                 </div>
             </div>
-
             <div class="contact">
                 <div class="conTitle">
                     <h2>CONTACT</h2>
                 </div>
                 <div class="">
-                    <p>You can contact me from the following</p>
                     <div class="form">
-                        <div class="form-title"></div>
                         <form>
                             <label for="email">Email:</label>
                             <input type="text" id="email" name="email" autocomplete="email" placeholder="example@gmail.com">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name" autocapitalize="on" autocomplete="name" placeholder="Jack Meoff">
+                            <label for="message">Message:</label>
+                            <input type="text" id="message" name="message" autocapitalize="on" placeholder="Type your message here...">
                         </form>
+                        <button id="send" >SEND</button>
                     </div>
                 </div>
             </div>
         </div>
-
-
         <div class="fadeBottom"></div> <!-- solely to get a fade going -->
         <div class="info">
             <div class="detailPlaceholder">
