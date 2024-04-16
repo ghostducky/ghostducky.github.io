@@ -1,13 +1,19 @@
+:root{
+    --bg-1: rgba(15, 15, 15, 14);
+    --bg-2: rgba(28, 26, 29, 13);
+    --bg-3: rgba(40, 30, 40, 20);
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #171717;
+    background: linear-gradient(45deg, var(--bg-1), var(--bg-2), var(--bg-3));
     color: #cfcfcf;
     margin: 0;
     padding: 0;
-    height: 300vh;
+    /*height: 300vh;*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -19,16 +25,15 @@ body {
 }
 
 .main {
-    padding-top: 50px;
+    padding-left: 20px;
     height: 100%;
     width: 100%;
-    background: #171717;
+    /*background: #171717;*/
 }
 
 /* ----------------- name n stuff -----------------*/
 .upBar {
     width: 100%;
-    background: #242424;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,22 +44,19 @@ body {
     padding-left: 30px;
     display: flex;
     align-items: center;
+    opacity: 100%;
 }
 
 .upBar .name h4 {
     font-size: 15px;
     font-weight: 500;
+    opacity: 100%;
 }
 
 .upBar .toggleBtn {
     cursor: pointer;
     background: transparent;
 }
-
-
-
-
-
 
 /* ----------------- fade -----------------*/
 .fadeTop {
@@ -92,22 +94,36 @@ body {
 .mainTop {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    margin-left: 20px;
+    height: 100vh;
 }
-
-.mainTop button {
+.main-view{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main-view button {
     background: transparent;
     border: none;
     color: #cfcfcf;
     cursor: pointer;
     margin: 0 10px;
     font-weight: 100;
+    text-align: left;
 }
-
+.mainTop .arrow-down{
+    
+}
 /* ----------------- d ----------------*/
 .proTitle,
 .abTitle,
 .conTitle {
-    margin-left: 20px;
+}
+/*--------------*/
+.form {
+    background: #242424;
+
+}
+.form label{
+    display: block;
+    margin-top: 5px;
 }
