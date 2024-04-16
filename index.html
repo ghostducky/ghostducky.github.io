@@ -46,15 +46,16 @@
                 </div>
                 <div class="">
                     <div class="form">
-                        <form>
+                        <form id="contact-form">
                             <label for="email">Email:</label>
-                            <input type="text" id="email" name="email" autocomplete="email" placeholder="example@gmail.com">
+                            <input type="text" id="email" name="email" autocomplete="email" placeholder="example@gmail.com" required>
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" autocapitalize="on" autocomplete="name" placeholder="Jack Meoff">
+                            <input type="text" id="name" name="name" autocapitalize="on" autocomplete="name" placeholder="Jack Meoff" required>
                             <label for="message">Message:</label>
-                            <input type="text" id="message" name="message" autocapitalize="on" placeholder="Type your message here...">
+                            <textarea id="message" name="message" rows="4" autocapitalize="on" placeholder="Type your message here..." required></textarea>
                         </form>
-                        <button id="send" >SEND</button>
+                        <button id="send" class="send-button" role="button">SEND</button>
+                        <p id="error-message" class="error">---</p>
                     </div>
                 </div>
             </div>
@@ -70,6 +71,7 @@
 
 <!-- SCRIPTS -->
 <script src="/js/allJavaS.js"></script>
+<script src="/js/mailDiscord.js"></script>
 </body>
 
 
