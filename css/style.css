@@ -44,18 +44,15 @@ body {
     padding-left: 30px;
     display: flex;
     align-items: center;
-    opacity: 100%;
 }
 
 .upBar .name h4 {
     font-size: 15px;
     font-weight: 500;
-    opacity: 100%;
 }
 
 .upBar .toggleBtn {
     cursor: pointer;
-    background: transparent;
 }
 
 /* ----------------- fade -----------------*/
@@ -121,6 +118,11 @@ body {
 }
 
 /* ----------------- d ----------------*/
+.project,
+.about,
+.contact{
+    height: 100vh;
+}
 .proTitle,
 .abTitle,
 .conTitle {
