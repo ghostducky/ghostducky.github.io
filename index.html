@@ -2,8 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Onni Raappana - Resume</title>
         <link rel="stylesheet" href="css/style.css"> <!-- all css -->
         <link rel="stylesheet" href="font/stylesheet.css"> <!-- font -->
 <!--just a test for webhook-->
@@ -28,33 +28,35 @@
                         <button id="contact">CONTACT</button>
                     </div>
                 </div>
-                <img id="arrow-down" class="arrow-down" src="./images/arrow-down.png" width="25" height="25">
+                <div class="arrow-down"></div>
             </div>
             <div id="project-page" class="project">
                 <div class="proTitle">
-                    <h2>PROJECTS</h2>
+                    <h1>PROJECTS</h1>
                 </div>
             </div>
             <div id="about-page" class="about">
                 <div class="abTitle">
-                    <h2>ABOUT</h2>
+                    <h1>ABOUT</h1>
                 </div>
             </div>
             <div id="contact-page" class="contact">
                 <div class="conTitle">
-                    <h2>CONTACT</h2>
+                    <h1>CONTACT</h1>
                 </div>
-                <div class="">
-                    <div class="form">
-                        <form id="contact-form">
-                            <label for="email">Email:</label>
-                            <input type="text" id="email" name="email" autocomplete="email" placeholder="example@gmail.com" required>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" autocapitalize="on" autocomplete="name" placeholder="Jack Meoff" required>
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" autocapitalize="on" placeholder="Type your message here..." required></textarea>
-                        </form>
-                        <button id="send" class="send-button" role="button">SEND</button>
+                <div class="form-placeholder">
+                    <div class="form-bg">
+                        <div class="form">
+                            <form id="contact-form">
+                                <label for="email">Email:</label>
+                                <input type="text" id="email" name="email" autocomplete="email" placeholder="example@gmail.com" required>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" autocomplete="name" placeholder="Jack Meoff" required>
+                                <label for="message">Message:</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required></textarea>
+                            </form>
+                        </div>
+                        <button id="send" class="send-button" role="button" type="button">SEND</button>
                         <p id="error-message" class="error">---</p>
                     </div>
                 </div>
@@ -63,9 +65,9 @@
         <div class="fadeBottom"></div> <!-- solely to get a fade going -->
         <div class="info">
             <div class="detailPlaceholder">
-                <img id="mail" src="./images/whitegmail.png" width="20" height="15">
-                <img id="linkedin" src="./images/linkedin-white.png" height="20">
-                <img id="github" src="./images/github-mark-white.png" height="20">
+                <img id="mail" src="./images/whitegmail.png" alt="mail" width="20" height="15">
+                <img id="linkedin" src="./images/linkedin-white.png" alt="linkedin" height="20">
+                <img id="github" src="./images/github-mark-white.png" alt="github" height="20">
             </div>
         </div>
 
