@@ -23,6 +23,9 @@ body {
     font-family: 'avenirroman', sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
+body button{
+    font-family: 'avenirroman', sans-serif;
+}
 
 .main {
     padding-left: 20px;
@@ -97,6 +100,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
+    left: 50%;
 }
 .main-view button {
     background: transparent;
@@ -110,81 +115,98 @@ body {
 .arrow-down {
     width: 33px;
     height: 33px;
-    border: 2px solid #333;
+    border: 2px solid #444444;
     border-left: 0;
     border-top: 0;
-  
     transform: rotate(45deg);
+    position: absolute;
+    margin-bottom: 100px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
 }
-
-/* ----------------- d ----------------*/
+/* ----------------- project, about, contact -----------------*/
 .project,
 .about,
-.contact{
+.contact {
     height: 100vh;
 }
-.proTitle,
-.abTitle,
-.conTitle {
+
+.proTitle h1,
+.abTitle h1,
+.conTitle h1 {
+    font-weight: 100;
 }
+
 /*--------------*/
+.form-placeholder {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
 .form {
     background: #242424;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-    margin-bottom: 30px;
+    width: 600px; /* Set a fixed width */
+    padding: 20px; /* Add padding for better appearance */
 }
-.form label{
+
+.form label {
     display: block;
     margin-top: 5px;
 }
+
 #email,
 #name,
 #message {
-    width: 30%; /* Adjust the width as needed */
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    margin-bottom: 10px; /* Add some bottom margin for spacing between inputs */
 }
-.send-button{
-  appearance: none;
-  background-color: transparent;
-  border: 2px solid #1A1A1A;
-  border-radius: 15px;
-  box-sizing: border-box;
-  color: #3B3B3B;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: normal;
-  margin: 0;
-  min-height: 60px;
-  min-width: 0;
-  outline: none;
-  padding: 16px 24px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  width: 400px;
-  will-change: transform;
+
+.send-button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-family: 'avenirroman', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0 auto; /* Center horizontally */
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    will-change: transform;
 }
 
 .send-button:disabled {
-  pointer-events: none;
+    pointer-events: none;
 }
 
 .send-button:hover {
-  color: #fff;
-  background-color: #1A1A1A;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-  transform: translateY(-2px);
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
 
 .send-button:active {
-  box-shadow: none;
-  transform: translateY(0);
+    box-shadow: none;
+    transform: translateY(0);
 }
-.error{
+
+.error {
     opacity: 0%;
 }
