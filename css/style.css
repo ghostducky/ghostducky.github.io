@@ -1,7 +1,19 @@
-:root {/*15, 15, 15, 14*/
-    --bg-1: rgba(14, 15, 16, 1);
-    --bg-2: rgba(28, 26, 29, 13);
-    --bg-3: rgba(40, 30, 40, 20);
+:root {
+    /* almost white */
+    --body-bg: rgb(207, 207, 207);
+    /* can be used as another colour later on */
+    /* almost black */
+    --black: rgba(15, 15, 15, 100);
+    /* now only used as main bg colour*/
+    /* lighter shade of black */
+    --almost-black: rgb(30, 30, 30);
+    /* even lighter shade */
+    --scrollwheel-bg: rgb(37, 37, 40);
+    /* can be used as another colour later on */
+    /* slight purple tint */
+    --dark-purple: rgb(40, 30, 40);
+
+    --form-bg: rgb(36,36,36);
 }
 
 html {
@@ -9,8 +21,8 @@ html {
 }
 
 body {
-    background: linear-gradient(45deg, var(--bg-1), var(--bg-2), var(--bg-3));
-    color: #cfcfcf;
+    background: var(--almost-black);
+    color: var(--body-bg);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -30,9 +42,18 @@ body button {
 .main {
     height: 100%;
     width: 100%;
-    /*background: #171717;*/
 }
 
+/* ----------------- scrollbar ----------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--scrollwheel-bg);
+    border-radius: 10px;
+}
 /* ----------------- name n stuff -----------------*/
 .upBar {
     width: 100%;
@@ -70,33 +91,7 @@ body button {
 /* ----------------- fade -----------------*/
 .fadeTop {
     width: 100%;
-    height: 20px;
-    background: linear-gradient(#242424, #171717);
-}
-
-.fadeBottom {
-    width: 100%;
-    height: 20px;
-    background: linear-gradient(#171717, #242424);
-}
-
-/* ----------------- bottom info -----------------*/
-.info {
-    background: #242424;
-    width: 100%;
-}
-
-.detailPlaceholder {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.detailPlaceholder img {
-    margin: 0 10px;
+    height: 80px;
 }
 
 /* ----------------- main page -----------------*/
@@ -107,12 +102,20 @@ body button {
 }
 
 .main-view {
-    height: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center; /* Center horizontally */
     position: relative;
-    transform: translateX(-50%);
+    width: 100%;
+    height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    margin-bottom: 33px; /* Adjust margin to create space between buttons and arrow */
 }
 
 .main-view button {
@@ -140,36 +143,37 @@ body button {
 }
 
 /* ----------------- project, about, contact -----------------*/
-.project,
-.about,
-.contact {
+.projects-page,
+.about-page,
+.contact-page {
     height: 100vh;
     padding-left: 20px;
 }
 
-.proTitle h1,
-.abTitle h1,
-.conTitle h1 {
+.projects-title h1,
+.about-title h1,
+.contact-title h1 {
     font-weight: 100;
 }
 
 /*--------------*/
-.form-placeholder {
+.contact-form-placeholder {
     padding-top: 50px;
     display: flex;
     justify-content: center;
 }
 
-.form {
-    background: #242424;
+.contact-form-container {
+    background: var(--form-bg);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     width: 600px;
     /* Set a fixed width */
     padding: 20px;
     /* Add padding for better appearance */
+    height: fit-content;
 }
 
-.form label {
+.contact-form-container label {
     display: block;
     margin-top: 5px;
 }
@@ -177,10 +181,12 @@ body button {
 #email,
 #name,
 #message {
-    width: calc(100% - 40px);
+    width: calc(100% - 0px);
     /* Adjust width to account for padding */
     margin-bottom: 10px;
     /* Add some bottom margin for spacing between inputs */
+    max-width: calc(100% - 10px);
+    min-width: calc(100% - 10px);
 }
 
 .send-button {
@@ -207,7 +213,7 @@ body button {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: calc(100% - 40px);
+    width: 100%;
     /* Adjust width to account for padding */
     will-change: transform;
 }
@@ -228,6 +234,25 @@ body button {
     transform: translateY(0);
 }
 
-.error {
+.error-message {
     opacity: 0%;
+}
+
+/* ----------------- bottom info -----------------*/
+.info {
+    background: var(--form-bg);
+    width: 100%;
+}
+
+.detailPlaceholder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.detailPlaceholder img {
+    margin: 0 10px;
 }

@@ -3,8 +3,8 @@ function navToEn() {
 }
 
 // Add event listeners to the buttons
-document.getElementById("project").addEventListener("click", function() {
-document.getElementById("project-page").scrollIntoView({behavior: "smooth", block: "start"});
+document.getElementById("projects").addEventListener("click", function() {
+document.getElementById("projects-page").scrollIntoView({behavior: "smooth", block: "start"});
 });
 
 document.getElementById("about").addEventListener("click", function() {
