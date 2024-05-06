@@ -31,3 +31,27 @@ function updateButtonState() {
 document.getElementById('email').addEventListener('input', updateButtonState);
 document.getElementById('name').addEventListener('input', updateButtonState);
 document.getElementById('message').addEventListener('input', updateButtonState);
+
+/*
+window.addEventListener('scroll', function() {
+    var buttons = document.getElementById('project');
+    var nothingForNow = document.querySelector('.nothingForNow');
+
+    var buttonsPosition = buttons.getBoundingClientRect().bottom;
+    var nothingForNowPosition = nothingForNow.getBoundingClientRect().bottom;
+
+    if (buttonsPosition > nothingForNowPosition) {
+        nothingForNow.style.filter = 'blur(5px)';
+    } else {
+        nothingForNow.style.filter = 'blur(0)';
+    }
+
+    // Check if buttons move above the nothingForNow div
+    var nothingForNowBottom = nothingForNow.getBoundingClientRect().bottom;
+    var buttonsBottom = buttons.getBoundingClientRect().bottom;
+
+    if (buttonsBottom < nothingForNowBottom) {
+        nothingForNow.style.filter = 'blur(0)';
+    }
+});
+*/
