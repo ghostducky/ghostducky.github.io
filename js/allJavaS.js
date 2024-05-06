@@ -53,5 +53,16 @@ window.addEventListener('scroll', function() {
     if (buttonsBottom < nothingForNowBottom) {
         nothingForNow.style.filter = 'blur(0)';
     }
-});
-*/
+});*/
+
+
+const blob = document.getElementById("blob");
+
+window.onpointermove = event => { 
+  const { clientX, clientY } = event;
+  
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY}px`
+  }, { duration: 3000, fill: "forwards" });
+}
