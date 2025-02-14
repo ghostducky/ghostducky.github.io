@@ -38,6 +38,10 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+button {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
 .buttonContainer{
     align-content: space-between;
     flex-direction: row;
