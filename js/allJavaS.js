@@ -1,6 +1,9 @@
 function navToEn() {
     window.location.href = '/home.html';
 }
+function NavToVAL(){
+    window.location.href = '/valentines.html'
+}
 
 // Add event listeners to the buttons
 document.getElementById("projects").addEventListener("click", function() {
@@ -54,15 +57,3 @@ window.addEventListener('scroll', function() {
         nothingForNow.style.filter = 'blur(0)';
     }
 });*/
-
-
-const blob = document.getElementById("blob");
-
-window.onpointermove = event => { 
-  const { clientX, clientY } = event;
-  
-  blob.animate({
-    left: `${clientX}px`,
-    top: `${clientY}px`
-  }, { duration: 3000, fill: "forwards" });
-}
