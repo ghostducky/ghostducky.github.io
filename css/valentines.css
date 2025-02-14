@@ -37,6 +37,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    opacity: 100%;
+    transition: opacity 0.5s ease-in-out;
 }
 button {
     -webkit-tap-highlight-color: transparent;
@@ -49,7 +51,7 @@ button {
 .buttonContainer button{
     margin: 0 10px;
     cursor: pointer;
-    font-weight: 100;
+    font-weight: 500;
     width: 50px;
     height: 25px;
     border-radius: 5px;
@@ -80,6 +82,17 @@ button {
     transform: translateY(0);
 }
 
-.afterQuestion{
-    display: none;
+.afterQuestion {
+    opacity: 0%;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+    font-weight: 700;
+}
+.afterQuestion p{
+    overflow-y: auto;
 }
