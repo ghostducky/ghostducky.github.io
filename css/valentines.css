@@ -1,0 +1,81 @@
+:root {
+    /* almost white */
+    --body-bg: rgb(207, 207, 207);
+    /* can be used as another colour later on */
+    /* almost black */
+    --black: rgba(15, 15, 15, 100);
+    /* now only used as main bg colour*/
+    /* lighter shade of black */
+    --almost-black: rgb(30, 30, 30);
+    /* even lighter shade */
+    --scrollwheel-bg: rgb(37, 37, 40);
+    /* can be used as another colour later on */
+    /* slight purple tint */
+    --dark-purple: rgb(40, 30, 40);
+    --almost-white: rgb(207, 207, 207);
+}
+body{
+    background: white;
+    color: var(--almost-black);
+}
+.home {
+    width: 100%;
+    height: 100%;
+}
+.pageContent{
+    padding-top: 50px;
+    flex-shrink: 1;
+}
+.gif{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.buttonContainer{
+    align-content: space-between;
+    flex-direction: row;
+}
+.buttonContainer button{
+    margin: 0 10px;
+    cursor: pointer;
+    font-weight: 100;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.yesButton{
+    background: rgb(3, 210, 3);
+}
+.yesButton:hover{
+    background-color: rgb(2, 241, 2);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+.noButton{
+    background: rgb(216, 1, 1);
+}
+.noButton:hover{
+    background-color: rgb(245, 1, 1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.buttonContainer button:active{
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.afterQuestion{
+    display: none;
+}
